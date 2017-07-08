@@ -22,14 +22,24 @@ def show_range():
 show_range()
 """
 
-
+"""
 # create be_cheerful(). within it, console.log string "good morning!" call it 98 times
 
 def be_cheerful():
     print("good morning!")
 
-def many_times(num, run):
+def many_times(num):
     for i in range(num + 1):
-        run()
+        be_cheerful()
 
-many_times(10, be_cheerful())
+many_times(10)
+"""
+
+# using for, print multiples of 3 from -300 to 0, skip -3 and -6
+
+def multiple_of_three():
+    for i in range(-300, 1):
+        if i % 3 == 0 and i != -3 and i != -6:
+            print (i) 
+
+multiple_of_three()
