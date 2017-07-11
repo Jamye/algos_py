@@ -53,6 +53,7 @@ def log_day(num1, num2):
     else:
         print("Just another day ...")
 
+
 #leap year
 # write a function that determines whether a given year is a leap year. if a year is divisible by four,
 # it is a leap year, unless it is divisble by 100. However, if it is divisible by 400, then it is
@@ -67,6 +68,7 @@ def leap_year(num):
             leap = True
     return leap
 
+
 #print and count
 #print all integers multiples of 5, from 512 to 4096. Afterward, also log how many there were.
 def print_and_count():
@@ -76,3 +78,13 @@ def print_and_count():
             print (i)
             count = count + 1 
     return count
+
+
+# multiples of 6
+# print multiples of 6 up to 60,000 using a while
+def multiples_of_six():
+    count = 6
+    while count <= 60000:
+        print count
+        count = count + 6
+    return 
