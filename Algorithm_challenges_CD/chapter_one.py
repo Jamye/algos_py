@@ -53,3 +53,15 @@ def log_day(num1, num2):
     else:
         print("Just another day ...")
 
+#leap year, write a function that determines whether a given year is a leap year. if a year is divisible by four,
+# it is a leap year, unless it is divisble by 100. However, if it is divisible by 400, then it is
+def leap_year(num):
+    leap = False
+    if num % 4 == 0:
+        if num % 400 == 0:
+            leap = True
+        elif num % 100 == 0:
+            leap = False
+        else:
+            leap = True
+    return leap
