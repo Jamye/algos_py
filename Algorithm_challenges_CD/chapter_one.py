@@ -88,3 +88,42 @@ def multiples_of_six():
         print count
         count = count + 6
     return 
+
+
+# counting the dojo way
+# print integers 1 to 100. If divisible by 5, print "coding" instead. if by 10, also print "dojo"
+def counting_dojo():
+    for i in range (1,101):
+        if i % 5 == 0:
+            print "Coding"
+        if i % 10 == 0:
+            print "Dojo"
+
+
+# what do you know?
+# your funtion will be given an input parameter incoming. please print this value
+def what_do_you_know(incoming):
+    print incoming
+
+
+
+# add odd integers from -11 to 11 and print the final sum, is there a short cut?
+def meet_me_halfway():
+    runner1 = -11
+    runner2 = 11
+    while runner1 < runner2:
+        print runner1
+        print runner2
+        runner1 = runner1 + 2
+        runner2 = runner2 - 2
+
+
+
+# countdown by fours
+# log positive numbers starting at 2016, counting down by fours(exclude 0), without a for loop
+def count_down_four():
+    number = 2016
+    while number > 0:
+        print number
+        number = number - 4
+
