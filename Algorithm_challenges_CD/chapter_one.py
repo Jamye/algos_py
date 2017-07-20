@@ -127,3 +127,12 @@ def count_down_four():
         print number
         number = number - 4
 
+
+# flexible countdown
+# based on countdown by fours. given lowNum, highNum, mult, print mults from highNum to lowNum
+def flex_countdown(low, high, mult):
+    for i in range (low, high):
+        if i % mult == 0:
+            print i
+
+flex_countdown(1,12,3)
