@@ -135,4 +135,11 @@ def flex_countdown(low, high, mult):
         if i % mult == 0:
             print i
 
-flex_countdown(1,12,3)
+# final countdown
+# just like flexible countdown, add an extra parameter so that if mult is equal to para4, skip that number using a while loop
+def final_countdown(mult,low, high, para4):
+    while low < high:
+        low = low + 1
+        if low % mult == 0 and low != para4:
+            print low
+
