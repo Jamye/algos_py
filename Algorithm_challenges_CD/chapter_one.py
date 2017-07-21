@@ -175,5 +175,18 @@ def first_plus_length(list):
         sum = "idonno what it is?"
     return sum
 
-print(first_plus_length([10,2,3]))
-        
+
+# values greater than second
+# given a list, print values that are greater than its 2nd value. Return how many values this is.
+def val_greater_than_second(list):
+    count = 0
+    for i in list:
+        if i > list[1]:
+            print i
+            count = count + 1
+    return count
+mylist = [1,19,12,22,33,51,3,5,7,8]
+
+
+# this length, that value
+# given two numbers, return array of length num1 with each value num2. Print "Jinx" if they are the same
