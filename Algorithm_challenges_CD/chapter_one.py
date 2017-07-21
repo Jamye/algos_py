@@ -143,3 +143,20 @@ def final_countdown(mult,low, high, para4):
         if low % mult == 0 and low != para4:
             print low
 
+
+# countdown
+# create a function that accepts a number as an input. return a new array that counts down by one, from the number
+# down to 0 as the last element. how longis this array?
+def countdown(num):
+    new_list = []
+    for count in range(num, 0, -1):
+        new_list.append(count)
+    return new_list
+
+
+# print and return
+# the function will receive an array with two numbers. print the first value and return the second.
+def print_and_return(list):
+    print list[0]
+    return list[1]
+
