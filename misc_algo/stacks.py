@@ -1,4 +1,4 @@
-Class Stack:
+class Stack:
     def __init__(self):
         self.items = []
 
@@ -16,3 +16,24 @@ Class Stack:
 
     def size(self):
         return len(self.items)
+
+
+def rev_string(my_str):
+    z = Stack()                 #create new instance
+    for i in my_str:
+        z.push(i)               #create stack with data in reverse order
+    new_string = ""
+    while not z.is_empty():
+        new_string += z.pop()   #while stack not empty, pop item and append to new string
+    return new_string
+
+print(rev_string("james"))
+
+
+
+m = Stack()
+m.push('x')
+m.push('y')
+m.pop()
+m.push('z')
+# print(m.peek())
