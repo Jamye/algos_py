@@ -27,8 +27,30 @@ def rev_string(my_str):
         new_string += z.pop()   #while stack not empty, pop item and append to new string
     return new_string
 
-print(rev_string("james"))
+# print(rev_string("james"))
 
+
+def is_balanced(symbol_string):
+    checker_stack = Stack()
+    if len(symbol_string) % 2 == 0:
+        for i in symbol_string:
+            if i == "(":
+                checker_stack.push(i)
+            elif i == ")":
+                checker_stack.pop()
+        if checker_stack.is_empty():
+            return "Balanced"
+        else:
+            return "Not balanced"
+    else:
+        return "String length is odd"
+
+print(is_balanced("(())"))
+
+    # if ( push into the stack,
+    # if its ),pop out
+    # when loop is done, if stack is empty
+    # it is balanced, if
 
 
 m = Stack()
