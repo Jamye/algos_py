@@ -17,7 +17,7 @@ class Stack:
     def size(self):
         return len(self.items)
 
-
+#reverse a string using a stack
 def rev_string(my_str):
     z = Stack()                 #create new instance
     for i in my_str:
@@ -27,9 +27,7 @@ def rev_string(my_str):
         new_string += z.pop()   #while stack not empty, pop item and append to new string
     return new_string
 
-# print(rev_string("james"))
-
-
+#check to see if string is balanced
 def is_balanced(symbol_string):
     checker_stack = Stack()
     if len(symbol_string) % 2 == 0:
@@ -47,15 +45,30 @@ def is_balanced(symbol_string):
 
 print(is_balanced("(())"))
 
-    # if ( push into the stack,
-    # if its ),pop out
-    # when loop is done, if stack is empty
-    # it is balanced, if
+def par_checker(symbol_string):
+    s = Stack()
+    balanced = True
+    index = 0
+    while index < len(symbol_string) and balanced:
+        symbol = symbol_string[index]
+        if symbol == "(":
+            s.push(symbol)
+        else:
+            if s.is_empty():
+                balanced = False
+            else:
+                s.pop()
+                index = index + 1
+    if balanced and s.is_empty():
+        return True
+    else:
+        return False
 
+# print(par_checker('((())))')
 
-m = Stack()
-m.push('x')
-m.push('y')
-m.pop()
-m.push('z')
+# m = Stack()
+# m.push('x')
+# m.push('y')
+# m.pop()
+# m.push('z')
 # print(m.peek())
