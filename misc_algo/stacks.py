@@ -17,6 +17,7 @@ class Stack:
     def size(self):
         return len(self.items)
 
+my_age = 25
 #reverse a string using a stack
 def rev_string(my_str):
     z = Stack()                 #create new instance
@@ -72,3 +73,4 @@ def par_checker(symbol_string):
 # m.pop()
 # m.push('z')
 # print(m.peek())
+print (my_age)
